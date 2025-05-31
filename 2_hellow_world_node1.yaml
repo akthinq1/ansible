@@ -1,0 +1,6 @@
+- name: node1 hellow world
+  host: node1
+  tasks:
+  - name: print hello
+    ansible.builtin.debug:
+      msg: "Hello world! on node1"
