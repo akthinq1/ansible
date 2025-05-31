@@ -19,4 +19,4 @@
   # task 2
   - name: print play level vars
     ansible.builtin.debug:
-    msg: "{{NAME}}, working in {{WORK}} and lives at {{LIVE}}"
+     msg: "{{NAME}}, working in {{WORK}} and lives at {{LIVE}}"
