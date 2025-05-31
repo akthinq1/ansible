@@ -1,0 +1,22 @@
+- name: check task level Variables
+  hosts: local
+  connection: local
+  vars:
+    NAME: RAM
+    LIVE: VIZAG
+    WORK: HYD
+  
+  tasks:
+  # task 1
+  - name: printing task level Variables
+    vars:
+      NAME: SITA
+      LIVE: BENG
+      WORK: USA
+    ansible.builtin.debug:
+      msg: "{{NAME}}, working in {{WORK}} and lives at {{LIVE}}"
+
+  # task 2
+  - name: print play level vars
+    ansible.builtin.debug:
+    msg: "{{NAME}}, working in {{WORK}} and lives at {{LIVE}}"
