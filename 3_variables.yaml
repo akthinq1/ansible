@@ -10,4 +10,4 @@
   tasks:
   - name: print local/play Variables
     ansible.builtin.debug:
-    msg: "Hello, {{NAME}} your dob->{{DOB}} and cell->{{CELL}} is correct"
+     msg: "Hello, {{NAME}} your dob->{{DOB}} and cell->{{CELL}} is correct"
