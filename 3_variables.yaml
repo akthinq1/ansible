@@ -1,0 +1,14 @@
+- name: Variables
+  hosts: local
+  connection: local
+  vars:
+    NAME: ANIL
+    DOB: JUNE
+    CELL: 000000000
+    LIVE: VBL
+
+  taks:
+  - name: print local/play Variables
+    ansible.builtin.debug:
+    msg: "Hello, {{NAME}} your dob->{{DOB}} and cell->{{CELL}} is correct"
+    
