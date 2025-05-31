@@ -7,8 +7,7 @@
     CELL: 000000000
     LIVE: VBL
 
-  taks:
+  tasks:
   - name: print local/play Variables
     ansible.builtin.debug:
     msg: "Hello, {{NAME}} your dob->{{DOB}} and cell->{{CELL}} is correct"
-    
